@@ -1,59 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>parking lot </title>
-    <link rel="stylesheet" href="style.css"/>
-   </head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <title> Project 2024</title>
+</head>
+
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Parking Lot Management System</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Parking Lot Management System</h1>
-        </header>
-        <main>
-            <section class="parking-lot">
-                <h2>Available Parking Spots</h2>
-                <div class="parking-spots">
-                    <div class="spot available">1</div>
-                    <div class="spot available">2</div>
-                    <div class="spot reserved">3</div>
-                    <div class="spot available">4</div>
-                    <div class="spot reserved">5</div>
-                    <div class="spot available">6</div>
-                    <div class="spot available">7</div>
-                    <div class="spot available">8</div>
-                    <div class="spot reserved">9</div>
-                    <div class="spot available">10</div>
-                    <div class="spot reserved">11</div>
-                    <div class="spot available">12</div>
-                    <div class="spot available">13</div>
-                    <div class="spot available">14</div>
-                    <div class="spot reserved">15</div>
-                    <div class="spot available">16</div>
-                    <div class="spot reserved">17</div>
-                    <div class="spot available">18</div>
-                </div>
-            </section>
-            <section class="reservation">
-                <h2>Reserve a Spot</h2>
-                <form id="reservation-form">
-                    <label for="spot-number">Spot Number:</label>
-                    <input type="number" id="spot-number" name="spot-number" min="1" max="18" required>
-                    <button type="submit">Reserve</button>
-                    <a href="/index.html">Add Details</a> </button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 Parking Lot Management System</p>
-        </footer>
-        <script src="main.js"></script>
-    </body>
-    </html>
+  <h1>Parking Lot Management System</h1>
+  <div classname="form-container">
+    <h3>Add Details</h3>
+  <form class="cf" id="cf">
+    <div class="">
+      <input type="text" class="inputBox" id="input-name" placeholder="Name" />
+      <input type="text" class="inputBox" id="input-vname" placeholder="Vehicle Name" />
+      <input type="text" class="inputBox" id="input-vnumber" placeholder="Vehicle Number Plate" />
+      <input type="date" class="inputBox" id="input-entry" placeholder="Entry Date" />
+      <input type="date" class="inputBox" id="input-exit" placeholder="Exit Date" />
+    </div>
+    <input type="submit" value="Submit" id="input-submit" onclick="" />
+  </form>
+  </div>
+  <table class="styled-table">
+    <h3>Vechile Details</h3>
+    <div class="search-bar">
+      <input type="text" name="search" id="searchInput" placeholder="Search" />
+      <i class="fa-solid fa-magnifying-glass search-ico"></i>
+    </div>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Vehicle Name</th>
+        <th>Vechile Number Plate</th>
+        <th>Entry Date</th>
+        <th>Exit Date</th>
+      </tr>
+    </thead>
+    <tbody id="datagohere">
+
+    </tbody>
+  </table>
+  <div class="footer-container">
+    <footer>
+      <a> Designed for SAGE. </a>
+    </footer>
+  </div>
+
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
